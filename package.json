@@ -1,0 +1,22 @@
+{
+  "name": "posi-c2",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000P\u0000O\u0000S\u0000I\u0000 \u0000C\u00002\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scidsgn/posi-c2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scidsgn/posi-c2/issues"
+  },
+  "homepage": "https://github.com/scidsgn/posi-c2#readme",
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
