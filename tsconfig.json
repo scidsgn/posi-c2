@@ -4,7 +4,7 @@
         "outDir": "build",
         "moduleResolution": "Node",
         "module": "CommonJS",
-        "lib": ["ESNext"]
+        "lib": ["ESNext", "DOM"]
     },
     "exclude": [
         "build"
