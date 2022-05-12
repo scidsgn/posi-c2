@@ -1,8 +1,9 @@
 import { scaleBoltzmann, scaleSigmaCut } from "./scaling"
-import { avg, evalF2, F2, rand2d } from "./utils"
+import { evalF2, rand2d } from "./utils"
 
-// Random population of 100x2
-const population = rand2d(100, 2, -2.048, 2.048)
+const n = 100
+
+const population = rand2d(n, 2, -2.048, 2.048)
 const evalPopulation = population.map(x => evalF2(x[0], x[1]))
 
 const sigmaCutPopulation = scaleSigmaCut(evalPopulation, 1)

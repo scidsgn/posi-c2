@@ -14,8 +14,12 @@ export function rand2d(x: number, y: number, min = 0, max = 1) {
     )
 }
 
+export function sum(xs: number[]) {
+    return xs.reduce((acc, x) => acc + x)
+}
+
 export function avg(xs: number[]) {
-    return xs.reduce((acc, x) => acc + x) / xs.length
+    return sum(xs) / xs.length
 }
 
 export function stdev(xs: number[]) {
