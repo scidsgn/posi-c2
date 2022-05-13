@@ -1,4 +1,5 @@
 import { scaleBoltzmann, scaleSigmaCut } from "./scaling"
+import { deterministicSelection, prepareCopyCounts } from "./selection"
 import { evalF2, rand2d } from "./utils"
 
 const n = 100
@@ -16,3 +17,7 @@ console.table(evalPopulation.map(
         boltzmann: boltzmannPopulation[i]
     })
 ))
+
+console.table(
+    deterministicSelection(prepareCopyCounts(evalPopulation, n))
+)
