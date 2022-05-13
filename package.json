@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/scidsgn/posi-c2#readme",
   "devDependencies": {
+    "@types/node": "^17.0.33",
     "typescript": "^4.6.4"
   }
 }

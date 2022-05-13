@@ -18,7 +18,10 @@ export function prepareCopyCounts(evals: number[], n: number): SelectionData {
 }
 
 export function deterministicSelection(data: SelectionData) {
-    const newPopulation = []
+    const newPopulation: {
+        index: number,
+        eval: number
+    }[] = []
 
     for (let i = 0; i < data.evals.length; i++) {
         for (let j = 0; j < data.integer[i]; j++) {
